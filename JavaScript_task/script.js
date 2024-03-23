@@ -119,4 +119,18 @@
           const countdownElement = document.getElementById('countdown');
           const playPauseButton = document.getElementById('play-pause');
           
+          function startTimer() {
+            timerInterval = setInterval(() => {
+              if (timeRemaining > 0) {
+                timeRemaining--;
+                updateTimerDisplay();
+              } else {
+                clearInterval(timerInterval);
+                submitQuiz(); // Submit quiz automatically when time runs out
+              }
+            }, 1000); // Update every second
+          }
+          
+         
+      
          
