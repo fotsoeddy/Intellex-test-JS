@@ -46,6 +46,7 @@ This handler then listens for events bubbling up from child elements
 Closures in JavaScript refer to the ability of a function to remember and access its lexical scope, even when the function is executed outside that scope. 
 They are created whenever a function is defined within another function and has access to variables declared in the outer function
 an example follow:
+
 function createCounter() {
     let count = 0;
 
