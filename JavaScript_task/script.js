@@ -131,6 +131,10 @@
             }, 1000); // Update every second
           }
           
-         
-      
-         
+          function updateTimerDisplay() {
+            const minutes = Math.floor(timeRemaining / 60);
+            const seconds = timeRemaining % 60;
+            countdownElement.textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+          }
+          
+          
