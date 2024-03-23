@@ -82,4 +82,19 @@
           const quizContainer = document.getElementById('quiz-container');
           const resultContainer = document.getElementById('result-container');
       
-       
+          function displayQuiz() {
+            questions.forEach((question, index) => {
+              let questionHTML = `<div class="question">`; // Start a div with class "question"
+              questionHTML += `<h2>Question ${index + 1}: ${question.question}</h2>`;
+              
+              question.options.forEach(option => {
+                questionHTML += `<input type="radio" name="q${index}" value="${option}"> ${option}<br>`;
+              });
+          
+              questionHTML += `</div>`; // Close the div
+              quizContainer.innerHTML += questionHTML; // Append each question to quiz container directly
+            });
+          }
+          
+      
+         
