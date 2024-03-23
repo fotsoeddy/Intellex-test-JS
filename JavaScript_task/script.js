@@ -87,14 +87,18 @@
               let questionHTML = `<div class="question">`; // Start a div with class "question"
               questionHTML += `<h2>Question ${index + 1}: ${question.question}</h2>`;
               
-              question.options.forEach(option => {
-                questionHTML += `<input type="radio" name="q${index}" value="${option}"> ${option}<br>`;
-              });
+              // Limiting options to only four
+              for (let i = 0; i < 4; i++) {
+                if (question.options[i]) { // Check if option exists
+                  questionHTML += `<input type="radio" name="q${index}" value="${question.options[i]}"> ${question.options[i]}<br>`;
+                }
+              }
           
               questionHTML += `</div>`; // Close the div
               quizContainer.innerHTML += questionHTML; // Append each question to quiz container directly
             });
           }
+          
           function submitQuiz() {
             let score = 0;
             questions.forEach((question, index) => {
