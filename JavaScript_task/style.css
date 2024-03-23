@@ -1,0 +1,42 @@
+body {
+    margin: 20px 50px; /* Adding margin on the left and right sides of the body */
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  .question {
+    background-color: #6ad483;
+    border: 1px solid #1e7e34;
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    width: 30%; /* Setting width to 30% */
+    display: inline-block; /* Ensuring each question is displayed inline */
+  }
+  
+  .question > h2 {
+    margin-bottom: 5px; /* Adding some margin below each question title */
+  }
+  
+  button {
+    display: block;
+    margin: 0 auto 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  #result-container {
+    text-align: center;
+  }
+  
