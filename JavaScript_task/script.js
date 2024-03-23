@@ -85,12 +85,12 @@
           function displayQuiz() {
             questions.forEach((question, index) => {
               let questionHTML = `<div class="question">`; // Start a div with class "question"
-              questionHTML += `<h2>Question ${index + 1}: ${question.question}</h2>`;
+              questionHTML += `<h2>Question  ${index + 1}: ${question.question}</h2>`;
               
               // Limiting options to only four
               for (let i = 0; i < 4; i++) {
                 if (question.options[i]) { // Check if option exists
-                  questionHTML += `<input type="radio" name="q${index}" value="${question.options[i]}"> ${question.options[i]}<br>`;
+                    questionHTML += `<input type="checkbox" name="q${index}" value="${question.options[i]}" style="color: blue;"> ${question.options[i]}<br>`;
                 }
               }
           
