@@ -38,3 +38,35 @@ It is based on the specificity of selectors used in CSS rules.
 
 4**JAVASCRIPT
 
+*Event Delegation:
+Event delegation is a technique in JavaScript where instead of attaching event handlers to individual elements, you attach a single event handler to a parent element.
+This handler then listens for events bubbling up from child elements
+
+*Closures:
+Closures in JavaScript refer to the ability of a function to remember and access its lexical scope, even when the function is executed outside that scope. 
+They are created whenever a function is defined within another function and has access to variables declared in the outer function
+an example follow:
+function createCounter() {
+    let count = 0;
+
+    return function() {
+        count++;
+        console.log('Count:', count);
+    };
+}
+
+let counter = createCounter();
+
+counter(); 
+counter(); 
+counter(); 
+
+
+5**Web Performance & Accessibility:
+*WAys to improve web page performance
+-Minimize HTTP Requests by combining and minifying CSS and JavaScript files.
+-Optimize Images by using appropriate formats, compressing, and lazy loading.
+-Implement Caching to reduce server load and speed up page loading times.
+ 
+*Role of ARIA Roles in Web Accessibility:
+ ARIA roles are a set of attributes used to define the roles and properties of elements on a webpage, particularly for assistive technologies such as screen readers
