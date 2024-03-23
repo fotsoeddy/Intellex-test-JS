@@ -7,12 +7,22 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Basic Quiz Application</h1>
-  <div id="quiz-container">
-    <!-- Questions and options will be generated dynamically -->
-  </div>
-  <button onclick="submitQuiz()">Submit Quiz</button>
-  <div id="result-container"></div>
-  <script src="script.js"></script>
+    <div id="timer-container">
+        <div id="timer">Time Remaining: <span id="countdown"></span></div>
+        <div id="controls">
+          <button id="play-pause"><i class="fas fa-play"></i></button>
+        </div>
+      </div>
+      <h1>Basic Quiz Application</h1>
+      <div id="quiz-container">
+        <!-- Questions and options will be generated dynamically -->
+      </div>
+      <button onclick="submitQuiz()">Submit Quiz</button>
+      <div id="result-container"></div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+      <script src="script.js"></script>
+      
+      
+  
 </body>
 </html>
