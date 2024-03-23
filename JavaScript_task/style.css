@@ -7,19 +7,27 @@ body {
     margin-bottom: 20px;
   }
   
+
   .question {
-    background-color: #6ad483;
-    border: 1px solid #1e7e34;
+    background-color: #6ee68a;
     padding: 10px;
     margin-bottom: 15px;
+    width: 30%;
     margin-left: 15px;
-    width: 30%; /* Setting width to 30% */
-    display: inline-block; /* Ensuring each question is displayed inline */
+    display: inline-block;
+    text-align: left;
+    border-radius: 20px; /* Adjust the value to control the roundness of the corners */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Apply a soft glow effect */
   }
   
-  .question > h2 {
-    margin-bottom: 5px; /* Adding some margin below each question title */
-  }
+
+.question > h2 {
+  margin-bottom: 5px;
+}
+
+.question input[type="radio"] {
+  margin-right: 10px; /* Add margin between options */
+}
   
   button {
     display: block;
