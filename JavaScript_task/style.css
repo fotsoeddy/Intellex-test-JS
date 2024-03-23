@@ -9,7 +9,7 @@ body {
   
 
   .question {
-    background-color: #6ee68a;
+    background-color: #b3fdc4;
     padding: 10px;
     margin-bottom: 15px;
     width: 30%;
@@ -46,5 +46,41 @@ body {
   
   #result-container {
     text-align: center;
+  }
+  #timer-container {
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  #timer {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  #controls {
+    margin-top: 10px;
+  }
+  
+  #play-pause {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #play-pause:hover {
+    background-color: #0056b3;
+  }
+  
+  h1 {
+    margin-top: 110px; 
   }
   
