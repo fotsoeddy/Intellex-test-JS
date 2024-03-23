@@ -79,4 +79,7 @@
           ];
           
 
-    
+          const quizContainer = document.getElementById('quiz-container');
+          const resultContainer = document.getElementById('result-container');
+      
+       
