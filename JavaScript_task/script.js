@@ -137,4 +137,22 @@
             countdownElement.textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
           }
           
+          function toggleTimer() {
+            if (playPauseButton.classList.contains('paused')) {
+              playPauseButton.innerHTML = '<i class="fas fa-pause"></i>';
+              playPauseButton.classList.remove('paused');
+              startTimer();
+            } else {
+              playPauseButton.innerHTML = '<i class="fas fa-play"></i>';
+              playPauseButton.classList.add('paused');
+              clearInterval(timerInterval);
+            }
+          }
           
+          playPauseButton.addEventListener('click', toggleTimer);
+          
+          // Call startTimer() to begin the countdown when the page loads
+          startTimer();
+          
+      
+         
