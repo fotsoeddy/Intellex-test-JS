@@ -114,6 +114,9 @@
       
           // Display quiz when the page loads
           displayQuiz();
-        
-      
+          let timerInterval;
+          let timeRemaining = 60; 
+          const countdownElement = document.getElementById('countdown');
+          const playPauseButton = document.getElementById('play-pause');
+          
          
