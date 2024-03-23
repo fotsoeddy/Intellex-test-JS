@@ -95,6 +95,21 @@
               quizContainer.innerHTML += questionHTML; // Append each question to quiz container directly
             });
           }
-          
+          function submitQuiz() {
+            let score = 0;
+            questions.forEach((question, index) => {
+              const selectedOption = document.querySelector(`input[name="q${index}"]:checked`);
+              if (selectedOption) {
+                if (selectedOption.value === question.answer) {
+                  score++;
+                }
+              }
+            });
+            resultContainer.innerHTML = `<h2>Your score is: ${score}</h2>`;
+          }
+      
+          // Display quiz when the page loads
+          displayQuiz();
+        
       
          
